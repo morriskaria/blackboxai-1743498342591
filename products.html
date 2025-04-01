@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Maturaco Technology Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .products-hero {
+            background-image: url('https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .product-card {
+            transition: all 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .tab-button.active {
+            background-color: #3B82F6;
+            color: white;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">Maturaco</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-400">Home</a>
+                <a href="about.html" class="hover:text-blue-400">About</a>
+                <a href="services.html" class="hover:text-blue-400">Services</a>
+                <a href="products.html" class="text-blue-400">Products</a>
+                <a href="contact.html" class="hover:text-blue-400">Contact</a>
+            </nav>
+            <button class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 transition">Contact Us</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="products-hero text-white py-32">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Our Technology Products</h1>
+            <p class="text-xl md:text-2xl">Innovative hardware and software solutions for modern businesses</p>
+        </div>
+    </section>
+
+    <!-- Product Tabs -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-center mb-8">
+                <div class="inline-flex rounded-md shadow-sm">
+                    <button onclick="showTab('hardware')" class="tab-button active px-6 py-3 rounded-l-lg border border-gray-300 font-medium">
+                        <i class="fas fa-server mr-2"></i> Hardware Products
+                    </button>
+                    <button onclick="showTab('software')" class="tab-button px-6 py-3 rounded-r-lg border border-gray-300 font-medium">
+                        <i class="fas fa-laptop-code mr-2"></i> Software Products
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hardware Products -->
+            <div id="hardware-tab" class="product-tab">
+                <h2 class="text-3xl font-bold text-center mb-8">Hardware Solutions</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg" alt="Enterprise Server" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">Maturaco X900 Server</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">NEW</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">High-performance enterprise server with 99.99% uptime guarantee</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$12,499</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg" alt="Network Switch" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Nexus 5000 Switch</h3>
+                        <p class="text-gray-600 mb-4">48-port 10Gbps enterprise network switch with advanced security</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$8,999</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/4226215/pexels-photo-4226215.jpeg" alt="IoT Device" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">SmartEdge IoT Gateway</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">BESTSELLER</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Industrial-grade IoT edge computing device with AI capabilities</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$3,299</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/2582937/pexels-photo-2582937.jpeg" alt="Storage Array" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">StorMax 5000 Array</h3>
+                        <p class="text-gray-600 mb-4">Petabyte-scale storage solution with built-in redundancy</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$24,999</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/2582928/pexels-photo-2582928.jpeg" alt="Workstation" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">ProWork X200</h3>
+                        <p class="text-gray-600 mb-4">High-performance workstation for engineering and design</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$5,499</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg">
+                            <img src="https://images.pexels.com/photos/3825582/pexels-photo-3825582.jpeg" alt="Security Appliance" class="w-full h-full object-cover">
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">SecureNet Firewall</h3>
+                        <p class="text-gray-600 mb-4">Next-generation firewall with threat intelligence</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$7,899</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Software Products -->
+            <div id="software-tab" class="product-tab hidden">
+                <h2 class="text-3xl font-bold text-center mb-8">Software Solutions</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg bg-blue-50 flex items-center justify-center">
+                            <i class="fas fa-chart-pie text-6xl text-blue-500"></i>
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">Analytics Pro</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">CLOUD</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Advanced business intelligence platform with AI-driven insights</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$199/month</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg bg-purple-50 flex items-center justify-center">
+                            <i class="fas fa-robot text-6xl text-purple-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">AI Workbench</h3>
+                        <p class="text-gray-600 mb-4">End-to-end machine learning platform for data scientists</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$499/month</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg bg-green-50 flex items-center justify-center">
+                            <i class="fas fa-project-diagram text-6xl text-green-500"></i>
+                        </div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">Workflow Engine</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">BESTSELLER</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Automate business processes with drag-and-drop workflow designer</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$149/month</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg bg-red-50 flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-6xl text-red-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">SecureSuite</h3>
+                        <p class="text-gray-600 mb-4">Comprehensive cybersecurity platform for enterprises</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$299/month</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg bg-yellow-50 flex items-center justify-center">
+                            <i class="fas fa-shopping-cart text-6xl text-yellow-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Commerce Cloud</h3>
+                        <p class="text-gray-600 mb-4">Omnichannel e-commerce platform with AI recommendations</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$249/month</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 -->
+                    <div class="product-card bg-gray-50 p-6 rounded-lg shadow-md">
+                        <div class="h-48 mb-4 overflow-hidden rounded-lg bg-indigo-50 flex items-center justify-center">
+                            <i class="fas fa-database text-6xl text-indigo-500"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">DataFusion</h3>
+                        <p class="text-gray-600 mb-4">Enterprise data integration and ETL platform</p>
+                        <div class="flex justify-between items-center">
+                            <span class="font-bold text-lg">$349/month</span>
+                            <button class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Need Custom Solutions?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Our team can develop tailored hardware and software products to meet your specific business requirements.</p>
+            <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold inline-block hover:bg-gray-100 transition">Request a Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Maturaco</h3>
+                    <p>Leading technology solutions provider since 2023.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-400">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
+                        <li><a href="products.html" class="hover:text-blue-400">Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p>info@maturaco.com</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Maturaco Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tabs
+            document.querySelectorAll('.product-tab').forEach(tab => {
+                tab.classList.add('hidden');
+            });
+            
+            // Show selected tab
+            document.getElementById(tabName + '-tab').classList.remove('hidden');
+            
+            // Update active button styling
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.remove('active', 'bg-blue-500', 'text-white');
+                button.classList.add('bg-white', 'text-gray-700');
+            });
+            
+            // Set active button
+            event.currentTarget.classList.add('active', 'bg-blue-500', 'text-white');
+            event.currentTarget.classList.remove('bg-white', 'text-gray-700');
+        }
+    </script>
+</body>
+</html>
