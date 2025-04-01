@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Maturaco Technology Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+        .services-hero {
+            background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-900 text-white p-4 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-2xl font-bold">Maturaco</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-400">Home</a>
+                <a href="about.html" class="hover:text-blue-400">About</a>
+                <a href="services.html" class="text-blue-400">Services</a>
+                <a href="products.html" class="hover:text-blue-400">Products</a>
+                <a href="contact.html" class="hover:text-blue-400">Contact</a>
+            </nav>
+            <button class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-600 transition">Contact Us</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="services-hero text-white py-32">
+        <div class="container mx-auto text-center px-4">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Our Technology Services</h1>
+            <p class="text-xl md:text-2xl">Comprehensive solutions tailored to your business needs</p>
+        </div>
+    </section>
+
+    <!-- Main Services -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Core Service Offerings</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Software Development -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-laptop-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Custom Software Development</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Web & Mobile Applications</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Enterprise Solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>API Development & Integration</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-500 font-medium inline-flex items-center">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Cloud Solutions -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-cloud text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Cloud & Infrastructure</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Cloud Migration Services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Managed AWS/Azure/GCP</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>DevOps & CI/CD Pipelines</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-500 font-medium inline-flex items-center">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Hardware Solutions -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-server text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Hardware Solutions</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Enterprise Networking</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Data Center Solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>IoT Device Integration</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-500 font-medium inline-flex items-center">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Cybersecurity</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Security Audits & Assessments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Managed Security Services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Compliance Consulting</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-500 font-medium inline-flex items-center">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- Data Analytics -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-chart-line text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">Data & Analytics</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Business Intelligence</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Big Data Solutions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>AI/ML Implementation</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-500 font-medium inline-flex items-center">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+
+                <!-- IT Consulting -->
+                <div class="service-card bg-gray-50 p-6 rounded-lg shadow-md transition duration-300">
+                    <div class="text-blue-500 mb-4">
+                        <i class="fas fa-headset text-4xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-semibold mb-3">IT Consulting</h3>
+                    <ul class="space-y-2 mb-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Technology Roadmapping</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>Digital Transformation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-green-500 mt-1 mr-2"></i>
+                            <span>24/7 Support Services</span>
+                        </li>
+                    </ul>
+                    <a href="contact.html" class="text-blue-500 font-medium inline-flex items-center">
+                        Get Started <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Our Service Process</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="relative">
+                    <!-- Process Line -->
+                    <div class="hidden md:block absolute left-16 top-0 h-full w-0.5 bg-blue-200 transform -translate-x-1/2"></div>
+                    
+                    <!-- Process Steps -->
+                    <div class="space-y-12">
+                        <!-- Step 1 -->
+                        <div class="relative flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 w-32 h-32 rounded-full bg-blue-500 text-white flex items-center justify-center text-2xl font-bold mr-6 mb-4 md:mb-0">
+                                1
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-semibold mb-3">Discovery & Planning</h3>
+                                <p>We begin with in-depth consultations to understand your business objectives, technical requirements, and success metrics.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="relative flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 w-32 h-32 rounded-full bg-blue-500 text-white flex items-center justify-center text-2xl font-bold mr-6 mb-4 md:mb-0">
+                                2
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-semibold mb-3">Solution Design</h3>
+                                <p>Our architects create customized solution blueprints with technology stack recommendations and implementation roadmaps.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="relative flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 w-32 h-32 rounded-full bg-blue-500 text-white flex items-center justify-center text-2xl font-bold mr-6 mb-4 md:mb-0">
+                                3
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-semibold mb-3">Development & Implementation</h3>
+                                <p>Our expert teams build and deploy your solution using agile methodologies with regular progress updates.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 4 -->
+                        <div class="relative flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 w-32 h-32 rounded-full bg-blue-500 text-white flex items-center justify-center text-2xl font-bold mr-6 mb-4 md:mb-0">
+                                4
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-semibold mb-3">Testing & Quality Assurance</h3>
+                                <p>We conduct rigorous testing across all functional and non-functional requirements before deployment.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 5 -->
+                        <div class="relative flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 w-32 h-32 rounded-full bg-blue-500 text-white flex items-center justify-center text-2xl font-bold mr-6 mb-4 md:mb-0">
+                                5
+                            </div>
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-semibold mb-3">Deployment & Support</h3>
+                                <p>We manage the complete rollout and provide ongoing maintenance, support, and optimization services.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Business?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Our technology experts are ready to discuss your project requirements and propose the perfect solution.</p>
+            <a href="contact.html" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold inline-block hover:bg-gray-100 transition">Get a Free Consultation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Maturaco</h3>
+                    <p>Leading technology solutions provider since 2023.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="hover:text-blue-400">Home</a></li>
+                        <li><a href="about.html" class="hover:text-blue-400">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-blue-400">Services</a></li>
+                        <li><a href="products.html" class="hover:text-blue-400">Products</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <p>info@maturaco.com</p>
+                    <p>+1 (555) 123-4567</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Maturaco Technologies. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
